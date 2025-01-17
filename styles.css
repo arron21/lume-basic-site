@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: text;
+@layer base {
+  h1 {
+    @apply text-2xl;
   }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+  }
+}
+
+body {
+  font-family: text;
+}
+
+.heroDivider {
+  border-radius: 100%;
+  height: 60px;
+  transform: translateY(50%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

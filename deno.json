@@ -1,7 +1,8 @@
 {
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.4.3/",
-    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.8.1/"
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.8.1/",
+    "preact": "https://esm.sh/preact@10.13.2"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
@@ -17,5 +18,4 @@
     "jsxImportSource": "npm:preact"
   },
   "nodeModulesDir": "auto"
-
 }

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first page</title>
+  </head>
+  <body>
+    <ul class="menu">
+    {{ for item of nav.menu("/posts/").children }}
+        <li>
+        {{ include "/menu_item.vto" { item } }}
+        </li>
+    {{ /for }}
+    </ul>
+
+    {{ content }}
+  </body>
+</html>

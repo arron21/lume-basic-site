@@ -1,50 +1,31 @@
-
 interface NavbarProps {
-    links: { text: string; href: string }[];
-    sticky?: boolean;
+  links: { text: string; href: string }[];
+  sticky?: boolean;
+  centered?: boolean;
 }
 
-export default function Navbar({ links, sticky = false }: NavbarProps) {
-return (
+export default function Navbar(
+  { links, sticky = false, centered = false }: NavbarProps,
+) {
+  return (
     <nav
-    className={`bg-neutral-800 text-white ${
+      className={`text-xl grid grid-flow-row sm:grid-flow-col ${
         sticky ? "sticky top-0 z-50" : ""
-    }`}
+      } bg-transparent bg-opacity-50 backdrop-blur-md ${
+        centered ? "justify-center" : ""
+      }`}
     >
-    <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <a href="/" className="text-xl font-bold">
-        Harold and Marzetta V. Jones Memorial Scholarship Charity 
-        </a>
-
-        {/* Hamburger Icon */}
-        <button
-        className="block md:hidden focus:outline-none"
-        >
-        <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            
-        </svg>
-        </button>
-
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6">
+      {/* Desktop Links */}
+      <div className="hidden md:flex space-x-6">
         {links.map((link) => (
-            <a
+          <a
             href={link.href}
-            className="hover:text-blue-400 transition-colors"
-            >
+            className="px-4 py-2 dark:text-white hover:bg-gray-100 hover:text-black transition-colors"
+          >
             {link.text}
-            </a>
+          </a>
         ))}
-        </div>
-    </div>
-
+      </div>
     </nav>
-);
+  );
 }

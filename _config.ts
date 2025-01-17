@@ -11,24 +11,36 @@ import sitemap from "lume/plugins/sitemap.ts";
 import robots from "lume/plugins/robots.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
+import nunjucks from "lume/plugins/nunjucks.ts";
+import nav from "lume/plugins/nav.ts";
 
 const site = lume();
-
 site.use(base_path());
+site.use(nav(/* Options */));
 site.use(sitemap(/* Options */));
 site.use(robots(/* Options */));
 site.use(brotli());
 site.use(date());
 site.use(favicon());
 site.use(jsx());
+site.use(nunjucks(/* Options */));
 site.use(tailwindcss(/* Options */));
 site.use(postcss());
 site.use(picture(/* Options */));
 site.use(transformImages());
 site.use(googleFonts({
-    cssFile: "styles.css",
-    fonts: {
-        text: "https://fonts.google.com/share?selection.family=Questrial&display=swap",
-    }
-  }));
+  cssFile: "styles.css",
+  fonts: {
+    text:
+      "https://fonts.google.com/share?selection.family=Questrial&display=swap",
+  },
+}));
+
 export default site;
+site.copy("/assets");
+
+site.addEventListener("afterBuild", () => {
+  for (const page of site.pages) {
+    console.log(page.src.path); // Logs the paths of all processed pages
+  }
+});

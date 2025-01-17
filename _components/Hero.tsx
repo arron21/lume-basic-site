@@ -1,6 +1,6 @@
 // components/Hero.tsx
 interface HeroProps {
-  image: string;
+  image?: string;
   heroText: string;
   heroTextSecondary?: string;
   links?: { text: string; href: string }[];
@@ -28,12 +28,14 @@ export default function Hero({
           <video
             src={video}
             autoPlay
-            loop
+            loop={true}
             muted
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="heroDivider absolute bottom-0 left-0 w-full h-2 bg-black rounded-t-full">
+        </div>
       </div>
 
       {/* Hero Text */}

@@ -24,7 +24,9 @@ export default function Footer({ links }: FooterProps) {
           ))}
         </div>
         <p className="text-center text-sm text-gray-400 mt-4">
-          &copy; {new Date().getFullYear()} Harold and Marzetta V. Jones Memorial Scholarship Charity. All rights reserved.
+          &copy; {new Date().getFullYear()}{" "}
+          Harold and Marzetta V. Jones Memorial Scholarship Charity. All rights
+          reserved.
         </p>
       </div>
     </footer>

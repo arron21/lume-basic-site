@@ -1,7 +1,7 @@
 export default function ({ children }) {
-    return (
-      <button class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors">
-        {children}
-      </button>
-    );
-  }
+  return (
+    <button class="px-2 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition-colors">
+      {children}
+    </button>
+  );
+}
