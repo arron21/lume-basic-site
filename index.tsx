@@ -1,4 +1,7 @@
-export const title = "Welcome to my page";
+// This file will not show live updates in the browser.
+// Once you save the page the server will rebuild the site and the changes will be visible in a few minutes.
+
+export const title = "Lume Starter";
 export const layout = "_includes/main.tsx";
 import BodyText from "./_components/BodyText.tsx";
 import Button from "./_components/Button.tsx";
@@ -7,8 +10,8 @@ import Hero from "./_components/Hero.tsx";
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
     <Hero
-      image="/assets/image/fountain.jpg"
-      video="/assets/image/race.mp4"
+      image="/media/fountain.jpg"
+      video="/media/4569076-hd_1920_1080_30fps.mp4"
       heroText="Lume CMS Starter"
       heroTextSecondary="Using Lume with Components, TypeScript, and Markdown"
       links={[
@@ -16,7 +19,8 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
       ]}
     />
     <BodyText>
-      <h2 class="text-xl">Lorem Ipsum</h2>
+    
+      <h2 class="text-xl">How to use this template</h2>
       <Button>Test</Button>
       <p class="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -58,3 +62,11 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     </BodyText>
   </>
 );
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+
 interface NavbarProps {
   links: { text: string; href: string }[];
   sticky?: boolean;

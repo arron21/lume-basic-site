@@ -39,6 +39,9 @@ site.use(googleFonts({
 export default site;
 site.copy("/assets");
 
+
+site.copy("/media");
+
 site.addEventListener("afterBuild", () => {
   for (const page of site.pages) {
     console.log(page.src.path); // Logs the paths of all processed pages
