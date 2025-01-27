@@ -30,7 +30,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "arronmccror-lume-basic-69"
-          entrypoint: ""
+          entrypoint: "serve.ts"
           root: "_site"
           
           
