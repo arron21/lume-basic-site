@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "jsxImportSource": "npm:preact"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": true
 }
