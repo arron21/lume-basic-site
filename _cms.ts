@@ -9,6 +9,7 @@ const password = "admin";
 const url = "http://localhost:3000";
 const cms = lumeCMS(
   {
+    root: '/admin',
     auth: {
       method: "basic",
       users: {

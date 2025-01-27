@@ -37,9 +37,6 @@ site.use(googleFonts({
 }));
 
 
-// Exclude `/admin` from Lume's build
-site.ignore("/admin");
-
 export default site;
 site.copy("/assets");
 site.copy("/media");
