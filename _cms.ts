@@ -6,7 +6,7 @@ import { Octokit } from "npm:octokit";
 // const password = Deno.env.get("PASSWORD") || "admin";
 const username = "admin";
 const password = "admin";
-const url = "http://localhost:3000";
+const url = "https://site-lume-basic-69.deno.dev/";
 const cms = lumeCMS(
   {
     root: '/admin',
