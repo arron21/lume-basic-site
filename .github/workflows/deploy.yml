@@ -29,8 +29,8 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "arronmccror-lume-basic-69"
-          entrypoint: "_serve.ts"
+          project: "cms-lume-basic-54"
+          entrypoint: "_cms.ts"
           root: "_site"
           
           
