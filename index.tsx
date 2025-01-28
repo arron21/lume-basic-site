@@ -13,7 +13,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
       image="/media/fountain.jpg"
       video="/media/4569076-hd_1920_1080_30fps.mp4"
       heroText="Lume CMS Starter"
-      heroTextSecondary="Using Lume with Components, TypeScript, and Markdown"
+      heroTextSecondary="Using Lume with Components, TypeScript, and Markdown, and Optional CMS"
       links={[
         { text: "Learn More", href: "/about" },
       ]}
@@ -62,6 +62,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     </BodyText>
   </>
 );
+
 
 
 
