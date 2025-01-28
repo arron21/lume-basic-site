@@ -21,7 +21,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     <BodyText>
     
       <h2 class="text-xl">How to use this template</h2>
-      <Button>Updated from Lume</Button>
+      <Button>test</Button>
       <p class="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -62,6 +62,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     </BodyText>
   </>
 );
+
 
 
 
